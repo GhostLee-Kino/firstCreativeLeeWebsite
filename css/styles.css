@@ -1,0 +1,161 @@
+/*
+ Programmer:Lee Salazar Chavez
+ Project: Personal Portfolio
+ File Name: styles.css
+ Date:Apr 1, 2022
+*/
+
+/* CSS Reset */
+ body, header, nav, main, footer, img, h1, h2, h3, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+ }
+ 
+ /* Style rules for body and images */
+ body{
+	background-color: #000;
+	color: #fff;
+}
+ img {
+	max-width: 100%;
+	display: block;
+ }
+
+/* Show mobile class, hide tablet-desktop class*/
+ .mobile {
+	 display: block;
+ }
+ .tab-desk {
+	 display:none;
+ }
+ 
+ /* Style rules for navigation area */
+ nav {
+	background-color: #000;
+ }
+ nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+ }
+ nav li {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+    border-top: 1px solid #fff;
+ }
+nav li:first-child {
+    border-top: none;
+}
+ 
+nav li a {
+	display: block;
+	color: #fff;
+	padding: 0.5em 3em;
+	text-decoration: none;
+ }
+
+ .skill {
+	 font-weight:bold;
+ }
+ 
+ .link{
+	 color: #775FC1;
+	 text-decoration: none;
+ }
+
+ /* Style rule for main */
+main{
+	background-color: #fff;
+	color: #000;
+	overflow: auto;
+	padding: 2% 5% 2% 5%;
+	font-size: 1.15em;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+ #programming, #additional, #advanced{
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+ }
+ #groomer, #seed, #itil {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+ }
+ #main, #order, #bill, #receipt {
+    width: 29%;
+	float: left;
+	margin: 0 2%;
+ }
+#lee, #leebike, #leefam {
+    width: 29%;
+	border-radius: 25px;
+	float: left;
+	margin: 0 2%;
+ }
+
+ul.a {
+	list-style-type: circle;
+}
+ul.b {
+	list-style-type: circle;
+}
+ul.c {
+	list-style-type: circle;
+}
+
+ /* Style rule for footer */
+footer p{
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+footer p a{
+	color: #fff;
+	text-decoration:none;
+}
+
+
+/* Media Query for Tablet Viewport */
+ @media screen and (min-width: 620px), print {
+    .tab-desk {
+	display: block;
+	}
+	.mobile {
+	display: none;
+	}
+	/*Tablet Viewport: Style rules for nav area*/
+	nav li {
+	border-top: none;
+	display: inline-block;
+	font-size: 1.25em;
+	}
+    nav li a {
+	padding: 0.5em;
+	} 
+}
+
+/* Media Query for Desktop Viewport */
+ @media screen and (min-width: 1000px), print {
+    .tab-desk {
+	display: block;
+	}
+	.mobile {
+	display: none;
+	}
+	/* Desktop Viewport: Style rules for nav area */
+    nav li {
+    font-size: 1.5em;
+     }
+	nav li a {
+	padding: 0.5em 1.5e 0.5em 1.5em;
+	}
+	nav li a:hover {
+	color: #000;
+	background-color: #fff;
+	}
+	
