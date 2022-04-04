@@ -6,7 +6,7 @@
 */
 
 /* CSS Reset */
- body, header, nav, main, footer, img, h1, h2, h3, ul{
+ body, header, nav, main, footer, img, h1, h2, h3, ul, figure, figcaption{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -55,61 +55,51 @@ nav li a {
 	padding: 0.5em 3em;
 	text-decoration: none;
  }
-
- .skill {
-	 font-weight:bold;
- }
  
  .link{
-	 color: #775FC1;
+	 color: #5B6392;
 	 text-decoration: none;
  }
 
  /* Style rule for main */
 main{
-	background-color: #fff;
+	background-color: #FAFAFA;
 	color: #000;
 	overflow: auto;
 	padding: 2% 5% 2% 5%;
 	font-size: 1.15em;
+    font-weight:bold;
 	font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.6;
+}
+h1{
+    text-align: center;
+}
+
+#rounded {
+    border-radius: 25px;
 }
 
  #programming, #additional, #advanced{
-	width: 29%;
-	float: left;
-	margin: 0 2%;
+    margin: 25px 50px 25px 100px;    
  }
  #groomer, #seed, #itil {
-	width: 29%;
-	float: left;
-	margin: 0 2%;
+	margin: 25px 50px 75px 100px;
  }
  #main, #order, #bill, #receipt {
-    width: 29%;
-	float: left;
-	margin: 0 2%;
+    margin: 25px 25px 25px 25px;
  }
-#lee, #leebike, #leefam {
-    width: 29%;
-	border-radius: 25px;
-	float: left;
-	margin: 0 2%;
+ #lee, #leebike, #leefam {
+    margin: 25px 50px 75px 100px;
  }
-
-ul.a {
-	list-style-type: circle;
-}
-ul.b {
-	list-style-type: circle;
-}
-ul.c {
-	list-style-type: circle;
+#intro, #contact, #projects {
+    text-align: center;
 }
 
  /* Style rule for footer */
 footer p{
 	font-size: 0.75em;
+    font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
 	color: #fff;
 	padding: 0 1em;
@@ -137,6 +127,35 @@ footer p a{
     nav li a {
 	padding: 0.5em;
 	} 
+     
+    /*Tablet Viewport: Style rules for main area*/ 
+    article{
+    display: block;
+    width: 50%;
+	float: left;
+	margin: 0 2% 2% 20%;
+    } 
+    
+    aside {
+    float: right;
+    padding-left: 15px;
+    margin-left: 15px;
+    } 
+    
+    #groomer, #seed, #itil {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+    }
+    #main, #order, #bill, #receipt {
+    margin: 25px 25px 25px 25px;
+    } 
+    #lee, #leebike, #leefam{
+    width: 29%;
+	float: left;
+	margin: 0 2%;    
+    }
+    
 }
 
 /* Media Query for Desktop Viewport */
@@ -147,6 +166,7 @@ footer p a{
 	.mobile {
 	display: none;
 	}
+     
 	/* Desktop Viewport: Style rules for nav area */
     nav li {
     font-size: 1.5em;
@@ -158,4 +178,19 @@ footer p a{
 	color: #000;
 	background-color: #fff;
 	}
+    /* Desktop Viewport: Style rules for main area */
+    #groomer, #seed, #itil {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+    }
+    #main, #order, #bill, #receipt {
+	margin: 0 2%;
+    }
+    #lee, #leebike, #leefam{
+    width: 29%;
+	float: left;
+	margin: 0 2%;         
+    }
 	
+}
