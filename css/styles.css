@@ -58,6 +58,7 @@ nav li a {
  
  .link{
 	 color: #5B6392;
+     font-weight:bold;
 	 text-decoration: none;
  }
 
@@ -141,19 +142,17 @@ footer p a{
     padding-left: 15px;
     margin-left: 15px;
     } 
-    
-    #groomer, #seed, #itil {
-	width: 29%;
-	float: left;
-	margin: 0 2%;
+     
+    .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 40px;
     }
-    #main, #order, #bill, #receipt {
-    margin: 25px 25px 25px 25px;
-    } 
-    #lee, #leebike, #leefam{
-    width: 29%;
+
+    #about, #faqs, #groomer, #seed, #itil, #lee, #leebike, #leefam{
+    width: 50%;
 	float: left;
-	margin: 0 2%;    
+	margin: 0 2% 2% 25%;    
     }
     
 }
