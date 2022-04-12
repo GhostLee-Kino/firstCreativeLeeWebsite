@@ -6,7 +6,7 @@
 */
 
 /* CSS Reset */
- body, header, nav, main, footer, img, h1, h2, h3, ul, figure, figcaption{
+ body, header, nav, main, footer, img, h1, h2, h3, ul, article, aside, figure, figcaption{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -82,7 +82,7 @@ h1{
 }
 
  #programming, #additional, #advanced{
-    margin: 25px 50px 25px 100px;    
+    margin: auto;    
  }
  #groomer, #seed, #itil {
 	margin: 25px 50px 75px 100px;
@@ -130,7 +130,7 @@ footer p a{
 	} 
      
     /*Tablet Viewport: Style rules for main area*/ 
-    article{
+     article{
     display: block;
     width: 50%;
 	float: left;
@@ -173,10 +173,12 @@ footer p a{
 	nav li a {
 	padding: 0.5em 1.5e 0.5em 1.5em;
 	}
+     
 	nav li a:hover {
 	color: #000;
 	background-color: #fff;
 	}
+     
     /* Desktop Viewport: Style rules for main area */
     #groomer, #seed, #itil {
 	width: 29%;
